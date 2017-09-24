@@ -1,0 +1,100 @@
+/* *****************************************************************
+		THE NAV BAR
+****************************************************************** */
+.navbar {
+    overflow: hidden;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+/* Small screen */
+@media(max-width: 1004px){
+	.navbar {
+		height: auto;
+		padding-top: 1%;
+		padding-bottom: 1%;
+	}
+}
+
+/* Large screen */
+@media(min-width: 1005px){
+	.navbar {
+		height: 50px;
+		padding-top: 0;
+		padding-bottom: 0;
+	}
+	
+	a.nav-link {
+		height: 50px;
+		padding: 0;
+		text-align: center;
+		padding-top: 10px;
+	}
+	
+	.navbar .nav-item a.active {
+		background-color: rgba(255,255,255,0.2)
+	}
+	
+}
+
+/* Links inside the navbar */
+.navbar a {
+    display: block;
+    text-align: center;
+}
+
+/* *****************************************************************
+		THE INTRO SECTION
+****************************************************************** */
+#intro {
+	padding-bottom: 5%;
+	text-align: center;
+	border-bottom: 1px solid rgb(200,200,200);
+}
+
+@media(max-width: 499px){
+	#intro {
+		padding-top: 18%;
+	}
+}
+
+@media(min-width: 500px){
+	#intro {
+		padding-top: 10%;
+	}
+}
+/* *****************************************************************
+		THE OFFER SECTION
+****************************************************************** */
+#product {
+	text-align: center;
+	padding-top: 5%;
+	padding-bottom: 5%;
+	border-bottom: 1px solid rgb(200,200,200);
+}
+
+#product h2 {
+	margin-bottom: 3%;
+}
+
+div.col-lg-3.col-md-4.col-sm-6 {
+	padding-top: 20px;;
+}
+
+/* *****************************************************************
+		THE CONTACT SECTION
+****************************************************************** */
+#contact {
+	text-align: center;
+	padding-top: 5%;
+	padding-bottom: 5%;
+}
+
+/* *****************************************************************
+		GENERAL
+****************************************************************** */
+body{
+    position: relative; 
+}
