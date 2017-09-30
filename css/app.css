@@ -46,7 +46,7 @@
 }
 
 /* *****************************************************************
-		THE INTRO SECTION
+		THE HEADER SECTION
 ****************************************************************** */
 #intro {
 	padding-bottom: 5%;
@@ -84,9 +84,51 @@ div.col-lg-3.col-md-4.col-sm-6 {
 }
 
 /* *****************************************************************
+		THE GOOGLE MAP SECTION
+****************************************************************** */
+
+#location {
+	padding-top: 5%;
+	padding-bottom: 5%;
+	border-bottom: 1px solid rgb(200,200,200);
+	padding-left: 4%;
+	padding-right: 4%;
+}
+
+#location h2 {
+	text-align: center;
+}
+
+#location div.location-div {
+	margin-top: 20px;
+}
+
+#map {
+	width:100%;
+	height:400px;
+}
+
+/* *****************************************************************
 		THE CONTACT SECTION
 ****************************************************************** */
 #contact {
+	padding-top: 5%;
+	padding-bottom: 5%;
+}
+
+#contact h2 {
+	text-align: center;
+}
+
+#contact form {
+	padding-left: 4%;
+	padding-right: 4%;
+}
+
+/* *****************************************************************
+		THE FOOTER SECTION
+****************************************************************** */
+#footer {
 	text-align: center;
 	padding-top: 5%;
 	padding-bottom: 5%;
@@ -98,3 +140,8 @@ div.col-lg-3.col-md-4.col-sm-6 {
 body{
     position: relative; 
 }
+
+img.svg {
+	width: 20px;
+}
+
