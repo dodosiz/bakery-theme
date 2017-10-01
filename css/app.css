@@ -145,3 +145,39 @@ img.svg {
 	width: 20px;
 }
 
+#alert {
+	padding-top: 10%;
+	padding-bottom: 20%;
+	content-align: center;
+}
+
+/* *****************************************************************
+		THE TABLE SECTION
+****************************************************************** */
+@media(max-width: 499px){
+	#tablePage {
+		padding-top: 18%;
+	}
+}
+
+@media(min-width: 500px){
+	#tablePage {
+		padding-top: 8%;
+	}
+}
+
+#tablePage {
+	padding-bottom: 5%;
+}
+
+#tablePage h2 {
+	text-align: center;
+	margin-top: 1%;
+}
+
+#tablePage table {
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 5%;
+	width: 60%;
+}

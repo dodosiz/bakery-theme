@@ -1,5 +1,5 @@
 ﻿<!DOCTYPE html>
-<html lang="el" ng-app="tables">
+<html lang="el">
     <head>
         <!-- Required meta tags -->
         <meta charset="utf-8">
@@ -15,7 +15,7 @@
     
     	<!-- The navigation bar -->
     	<nav id="menu" class="navbar navbar-expand-lg navbar-dark bg-dark">
-          <a class="navbar-brand" href="#">Brand Name</a>
+          <a class="navbar-brand" href="#intro">Brand Name</a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -52,19 +52,19 @@
         	<h2>We Offer</h2>
     		<div class="row">
     			<div class="col-lg-3 col-md-4 col-sm-6">
-    				<img src="./img/bread.png" class="img-fluid" id="bread-link" alt="bread">
+    				<a href="./tables/bread/bread.php"><img src="./img/bread.png" class="img-fluid" id="bread-link" alt="bread"></a>
     			</div>
             	<div class="col-lg-3 col-md-4 col-sm-6">
-            		<img src="./img/pie.png" class="img-fluid" id="pie-link" alt="pie">
+            		<a href="./tables/pie/pie.php"><img src="./img/pie.png" class="img-fluid" id="pie-link" alt="pie"></a>
     			</div>
     			<div class="col-lg-3 col-md-4 col-sm-6">
-    				<img src="./img/sweet.png" class="img-fluid" id="sweet-link" alt="sweet">
+    				<a href="./tables/sweet/sweet.php"><img src="./img/sweet.png" class="img-fluid" id="sweet-link" alt="sweet"></a>
     			</div>
     			<div class="col-lg-3 col-md-4 col-sm-6">
-    				<img src="./img/milk.png" class="img-fluid" id="milk-link" alt="milk">
+    				<a href="./tables/milk/milk.php"><img src="./img/milk.png" class="img-fluid" id="milk-link" alt="milk"></a>
     			</div>
     			<div class="col-lg-3 col-md-4 col-sm-6">
-    				<img src="./img/drink.png" class="img-fluid" id="drink-link" alt="drink">
+    				<a href="./tables/drink/drink.php"><img src="./img/drink.png" class="img-fluid" id="drink-link" alt="drink"></a>
     			</div>
             </div>
         </div>
@@ -88,25 +88,26 @@
         <!-- The contact section -->
         <div id="contact" class="container-fluid">
         	<h2>Contact</h2>
-        	<form>
+        	<form method="post" action="sendmail.php">
         		<div class="form-group">
                     <label for="exampleFormControlInput1">Email address</label>
-                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" required="true">
+                    <input name="email" type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" required="true">
                 </div>
                 
                 <div class="form-group">
                     <label for="exampleFormControlSubject">Subject</label>
-                    <textarea class="form-control" id="exampleFormControlSubject" rows="1" placeholder="write a subject" required="true"></textarea>
+                    <textarea name="subject" class="form-control" id="exampleFormControlSubject" rows="1" placeholder="write a subject" required="true"></textarea>
                 </div>
                 
         		<div class="form-group">
                     <label for="exampleFormControlText">Text</label>
-                    <textarea class="form-control" id="exampleFormControlText" rows="3" placeholder="write your message" required="true"></textarea>
+                    <textarea name="message" class="form-control" id="exampleFormControlText" rows="3" placeholder="write your message" required="true"></textarea>
                 </div>
                 
-                <button type="submit" class="btn btn-dark">Submit</button>
+                <button type="submit" name="submit" value="Submit" class="btn btn-dark">Submit</button>
                 
         	</form>
+        	
         </div>
         
         <footer id="footer" class="container-fluid bg-dark text-white text-muted">
@@ -119,15 +120,10 @@
         <script src="./vendor/bootstrap/js/bootstrap.min.js"></script>
     
     	<!-- Custom JS for jQuery -->
-        <script src="./js/app.js"></script>
+        <script src="./js/script.js"></script>
         
-        <!-- AngularJS core -->
-        <script src="./vendor/angular/angular.js"></script>
+        <!-- Google map script -->
+        <script src="./js/map.js"></script>
         
-        <!-- Custom JS for Angular -->
-        <script src="./js/tables.js"></script>
-        
-        <!-- Google maps API -->
-        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBi4Ejs_szto9w05iYlR4e_7IFwEHDjLiA&callback=myMap"></script>
     </body>
 </html>
